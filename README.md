@@ -10,9 +10,10 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 ## 🎯 Screenshots
 
 <p float="left">
-  <img src="screenshots/home.png" width="200" alt="Home Screen" />
-  <img src="screenshots/tasks.png" width="200" alt="Tasks Screen" />
-  <img src="screenshots/settings.png" width="200" alt="Settings Screen" />
+  <img src="screenshots/DD_Main.jpeg" width="200" alt="Home Screen" />
+  <img src="screenshots/DD_settings.joeg" width="200" alt="Settings screen" />
+  <img src="screenshots/DD_Tasks.jpeg" width="200" alt="Tasks Screen" />
+  <img src="screenshots/DD_Task_Add.jpeg" width="200" alt="Tasks add Screen" />
 </p>
 
 ## ✨ Features
@@ -102,9 +103,6 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 |---------|---------|
 | v2.0.0 | Home screen, Settings, Custom notifications |
 | v1.0.0 | Initial release, Basic task management |
-
-## 📄 License
-MIT License - See [LICENSE](LICENSE)
 
 ## 👤 Author
 **RJS Labbert**
