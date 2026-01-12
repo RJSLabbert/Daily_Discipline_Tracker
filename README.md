@@ -8,9 +8,9 @@ Android Kotlin app: **Add daily tasks → Check completion → Get reminder noti
 
 ## 🎯 Demo
 <p float="left">
-  <img src="DD_Main.jpeg" width="250" />
-  <img src="DD_Task_Add.jpeg" width="250" />
-  <img src="DD_Tasks.jpeg" width="250" />
+  <img src="screenshots/DD_Main.jpeg" width="250" />
+  <img src="screenshots/DD_Task_Add.jpeg" width="250" />
+  <img src="screenshots/DD_Tasks.jpeg" width="250" />
 </p>
 
 ## ✨ Features
