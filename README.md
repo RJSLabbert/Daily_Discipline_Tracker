@@ -57,18 +57,17 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 4. Grant notification permission when prompted
 
 ## 📁 Project Structure
-app/src/main/
-├── java/com/example/dailydiscipline/
-│ ├── MainActivity.kt (Home screen)
-│ ├── TasksActivity.kt (Task management)
-│ ├── SettingsActivity.kt (Settings)
-│ ├── NotificationReceiver.kt (Handles notifications)
-│ └── BootReceiver.kt (Boot handling)
-├── res/layout/
-│ ├── activity_main.xml (Home layout)
-│ ├── activity_tasks.xml (Tasks layout)
-│ └── activity_settings.xml (Settings layout)
-└── AndroidManifest.xml
+
+| File | Location | Purpose |
+|------|----------|---------|
+| `MainActivity.kt` | java/.../dailydiscipline/ | Home screen |
+| `TasksActivity.kt` | java/.../dailydiscipline/ | Task management |
+| `SettingsActivity.kt` | java/.../dailydiscipline/ | Settings |
+| `NotificationReceiver.kt` | java/.../dailydiscipline/ | Handles notifications |
+| `BootReceiver.kt` | java/.../dailydiscipline/ | Boot handling |
+| `activity_main.xml` | res/layout/ | Home layout |
+| `activity_tasks.xml` | res/layout/ | Tasks layout |
+| `activity_settings.xml` | res/layout/ | Settings layout |
 
 ## 🔧 Troubleshooting
 
