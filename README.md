@@ -7,7 +7,11 @@ Android Kotlin app: **Add daily tasks → Check completion → Get reminder noti
 [![Android](https://img.shields.io/badge/Android-API_26+-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
 
 ## 🎯 Demo
-![App Demo](demo.gif) *(Record emulator > Upload GIF/APK screenshot.)*
+<p float="left">
+  <img src="DD_Main.jpeg" width="250" />
+  <img src="DD_Task_Add.jpeg" width="250" />
+  <img src="DD_Tasks.jpeg" width="250" />
+</p>
 
 ## ✨ Features
 - ➕ **Add/Remove Tasks**: Simple task management.
