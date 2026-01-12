@@ -27,12 +27,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".TasksActivity" />
+        <activity android:name=".SettingsActivity" />
+
         <receiver
-            android:name=".MainActivity$NotificationReceiver"
+            android:name=".NotificationReceiver"
             android:exported="false" />
 
         <receiver
-            android:name=".MainActivity$BootReceiver"
+            android:name=".BootReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
