@@ -11,7 +11,7 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 
 <p float="left">
   <img src="screenshots/DD_Main.jpeg" width="200" alt="Home Screen" />
-  <img src="screenshots/DD_settings.joeg" width="200" alt="Settings screen" />
+  <img src="screenshots/DD_Settings.jpeg" width="200" alt="Settings screen" />
   <img src="screenshots/DD_Tasks.jpeg" width="200" alt="Tasks Screen" />
   <img src="screenshots/DD_Task_Add.jpeg" width="200" alt="Tasks add Screen" />
 </p>
