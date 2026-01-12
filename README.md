@@ -2,7 +2,7 @@
 
 Android Kotlin app: **Add daily tasks → Check completion → Get reminder notifications until done**.
 
-[![Live APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge)](https://github.com/RJSLabbert/Daily_Discipline_Tracker/releases/download/v1.0.0/app-debug.apk)
+[![Live APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge)](https://github.com/RJSLabbert/Daily_Discipline_Tracker/releases)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-orange?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Android](https://img.shields.io/badge/Android-API_26+-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
 
