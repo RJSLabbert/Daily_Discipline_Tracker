@@ -81,9 +81,6 @@ Android Kotlin app: **Add daily tasks → Check completion → Get reminder noti
 
 </details>
 
-## 📄 License
-MIT License - See [LICENSE](LICENSE)
-
 ## 👤 Author
 **RJS Labbert**
 - GitHub: [@RJSLabbert](https://github.com/RJSLabbert)
