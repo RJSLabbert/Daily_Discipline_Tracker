@@ -136,10 +136,10 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 
 | Version | Date | Changes |
 |---------|------|---------|
-| v2.0.2 | 2024 | Home screen tasks, confirmation dialog, celebration message |
-| v2.0.1 | 2024 | Daily auto-reset fix |
-| v2.0.0 | 2024 | Home screen, Settings, Custom notifications |
-| v1.0.0 | 2024 | Initial release, Basic task management |
+| v2.0.2 | 2025 | Home screen tasks, confirmation dialog, celebration message |
+| v2.0.1 | 2025 | Daily auto-reset fix |
+| v2.0.0 | 2025 | Home screen, Settings, Custom notifications |
+| v1.0.0 | 2025 | Initial release, Basic task management |
 
 ## 🆕 Latest Changes (v2.0.2)
 
