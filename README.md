@@ -1,85 +1,108 @@
 # Daily Discipline Task Manager 📋✅
 
-Android Kotlin app: **Add daily tasks → Check completion → Get reminder notifications until done**.
+Android Kotlin app: **Add daily tasks → Check completion → Get customizable reminder notifications**.
 
-[![Live APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge)](https://github.com/RJSLabbert/Daily_Discipline_Tracker/releases)
+[![Live APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge)]([https://github.com/RJSLabbert/Daily_Discipline_Tracker/releases/download/v2.0.0/app-debug.apk](https://github.com/RJSLabbert/Daily_Discipline_Tracker/blob/main/Apk/app-debug.apk))
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-orange?logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Android](https://img.shields.io/badge/Android-API_26+-3DDC84?logo=android&logoColor=white)](https://developer.android.com)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/RJSLabbert/Daily_Discipline_Tracker/releases)
 
-## 🎯 Demo
+## 🎯 Screenshots
+
 <p float="left">
-  <img src="screenshots/DD_Main.jpeg" width="250" />
-  <img src="screenshots/DD_Task_Add.jpeg" width="250" />
-  <img src="screenshots/DD_Tasks.jpeg" width="250" />
+  <img src="screenshots/DD_Main.jpeg" width="200" alt="Home Screen" />
+  <img src="screenshots/DD_Settings.jpeg" width="200" alt="Settings screen" />
+  <img src="screenshots/DD_Tasks.jpeg" width="200" alt="Tasks Screen" />
+  <img src="screenshots/DD_Task_Add.jpeg" width="200" alt="Tasks add Screen" />
 </p>
 
 ## ✨ Features
-- ➕ **Add/Remove Tasks**: Simple task management.
-- ☑️ **Checkbox Completion**: Visual feedback (green highlight).
-- 🔔 **Smart Notifications**: 5PM-11PM every 30 mins if incomplete.
-- 🔄 **Daily Auto-Reset**: Tasks uncheck at midnight.
-- 💾 **Persistent Storage**: SharedPreferences saves data.
-- 📱 **Permissions**: Notifications/Alarms handled.
+
+### 🏠 Home Screen
+- 📊 Daily progress overview
+- 🔘 Quick access to Tasks and Settings
+- 🔔 Notification status display
+
+### 📝 Task Management
+- ➕ **Add/Remove Tasks**: Simple task management
+- ☑️ **Checkbox Completion**: Visual feedback (green highlight)
+- 🔄 **Reset All**: Uncheck all tasks with one tap
+
+### ⚙️ Customizable Settings
+- 🕐 **Start Time**: Set when reminders begin
+- 🕐 **End Time**: Set when reminders stop
+- ⏱️ **Frequency**: Choose reminder interval
+  - Every 15 minutes
+  - Every 30 minutes
+  - Every 45 minutes
+  - Every 1 hour
+  - Every 2 hours
+- 🔔 **Toggle**: Enable/disable notifications
+
+### 🔔 Smart Notifications
+- Only triggers if tasks are incomplete
+- Respects your custom schedule
+- Auto-resets tasks daily
 
 ## 🛠️ Tech Stack
 - Kotlin 1.9+
 - Android SDK 34 / Min 26
 - AlarmManager + NotificationManager
 - SharedPreferences
+- Multi-Activity Architecture
 
 ## 🚀 Quick Setup
-1. Clone:
-   git clone https://github.com/RJSLabbert/daily-discipline-android.git
-   
+1. Clone: git clone https://github.com/RJSLabbert/Daily_Discipline_Tracker.git
 2. Open in Android Studio
 3. Build & Run on device/emulator
 4. Grant notification permission when prompted
 
-## 📅 Notification Schedule
-| Time | Status |
-|------|--------|
-| 5:00 PM | First reminder |
-| 5:30 PM → 11:00 PM | Every 30 mins |
-| *Only if tasks incomplete* | |
+## 📁 Project Structure
 
-## 🔧 Troubleshooting (Exact Error Logs + Fixes)
+| File | Location | Purpose |
+|------|----------|---------|
+| `MainActivity.kt` | java/.../dailydiscipline/ | Home screen |
+| `TasksActivity.kt` | java/.../dailydiscipline/ | Task management |
+| `SettingsActivity.kt` | java/.../dailydiscipline/ | Settings |
+| `NotificationReceiver.kt` | java/.../dailydiscipline/ | Handles notifications |
+| `BootReceiver.kt` | java/.../dailydiscipline/ | Boot handling |
+| `activity_main.xml` | res/layout/ | Home layout |
+| `activity_tasks.xml` | res/layout/ | Tasks layout |
+| `activity_settings.xml` | res/layout/ | Settings layout |
+
+## 🔧 Troubleshooting
 
 <details>
-<summary>Click to Expand All Logs</summary>
+<summary>Click to Expand</summary>
 
 ### 1. No Notifications Appearing
-**Issue**: App runs but no notifications at scheduled times.
-
 **Fix**:
-- Settings > Apps > Daily Discipline > Permissions > Enable Notifications.
-- Android 12+: Settings > Apps > Daily Discipline > Alarms & Reminders > Allow.
-- Disable battery optimization for app.
+- Settings > Apps > Daily Discipline > Permissions > Enable Notifications
+- Android 12+: Enable Alarms & Reminders permission
+- Disable battery optimization for app
 
 ### 2. Tasks Not Saving
-**Issue**: Tasks disappear after closing app.
-
 **Fix**:
-- Check storage permissions.
-- Clear app data: Settings > Apps > Daily Discipline > Storage > Clear Data.
-- Reinstall app.
+- Clear app data: Settings > Apps > Daily Discipline > Storage > Clear Data
+- Reinstall app
 
-### 3. Build Errors - Unresolved References
-**Exact Log**: Unresolved reference: 'gson' or similar.
-
+### 3. Settings Not Applying
 **Fix**:
-- File > Sync Project with Gradle Files.
-- Build > Clean Project > Rebuild Project.
-- Check build.gradle.kts dependencies.
+- Make sure to tap "Save Settings" button
+- Check that End Time is after Start Time
 
 ### 4. Permission Denied on Android 13+
-**Exact Log**: Permission denied for POST_NOTIFICATIONS
-
 **Fix**:
-- Add to Manifest: uses-permission android:name="android.permission.POST_NOTIFICATIONS"
-- Request permission at runtime (already in code).
-- Manually enable in device settings.
+- Manually enable notifications in device settings
 
 </details>
+
+## 📋 Version History
+
+| Version | Changes |
+|---------|---------|
+| v2.0.0 | Home screen, Settings, Custom notifications |
+| v1.0.0 | Initial release, Basic task management |
 
 ## 👤 Author
 **RJS Labbert**
