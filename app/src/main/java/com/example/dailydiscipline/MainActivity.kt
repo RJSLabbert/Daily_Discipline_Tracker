@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         const val END_HOUR_KEY = "end_hour"
         const val END_MINUTE_KEY = "end_minute"
         const val FREQUENCY_KEY = "frequency"
+        const val LAST_RESET_KEY = "last_reset_date"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
 
         createNotificationChannel()
         requestNotificationPermission()
+        checkAndResetDaily()
 
         tasksButton.setOnClickListener {
             startActivity(Intent(this, TasksActivity::class.java))
@@ -65,6 +67,9 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         updateProgress()
         updateNotificationStatus()
+        // Check for daily reset every time app comes to foreground
+        // This catches cases where app was open past midnight
+        checkAndResetDaily()
     }
 
     private fun updateProgress() {
@@ -102,6 +107,49 @@ class MainActivity : AppCompatActivity() {
             e.printStackTrace()
             progressText.text = "No tasks yet"
             progressBar.progress = 0
+        }
+    }
+
+    /**
+     * Checks if today is a new day compared to last reset
+     * If yes, resets all task completion statuses to false
+     * This ensures users start fresh each day
+     */
+    private fun checkAndResetDaily() {
+        // Get today's date as a simple string (e.g., "2024-01-15")
+        val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+            .format(java.util.Date())
+
+        // Get the last reset date from storage
+        val lastReset = prefs.getString(LAST_RESET_KEY, "") ?: ""
+
+        // If today is different from last reset, we need to reset tasks
+        if (today != lastReset) {
+
+            // Get current task names
+            val namesString = prefs.getString(TASK_NAMES_KEY, "") ?: ""
+
+            // Only reset if there are tasks
+            if (namesString.isNotEmpty()) {
+
+                // Count how many tasks exist
+                val taskCount = namesString.split("|||").filter { it.isNotEmpty() }.size
+
+                // Create a string of "false" for each task (all unchecked)
+                // Example: If 3 tasks, creates "false|||false|||false"
+                val resetStatuses = (1..taskCount).joinToString("|||") { "false" }
+
+                // Save the reset statuses
+                prefs.edit()
+                    .putString(TASK_STATUS_KEY, resetStatuses)
+                    .putString(LAST_RESET_KEY, today)  // Save today as last reset date
+                    .apply()
+            } else {
+                // No tasks, just save today's date
+                prefs.edit()
+                    .putString(LAST_RESET_KEY, today)
+                    .apply()
+            }
         }
     }
 
