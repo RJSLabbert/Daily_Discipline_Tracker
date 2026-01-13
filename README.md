@@ -9,9 +9,11 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 ## 🎯 Screenshots
 
 <p float="left">
-  <img src="screenshots/home.png" width="200" alt="Home Screen" />
-  <img src="screenshots/tasks.png" width="200" alt="Tasks Screen" />
-  <img src="screenshots/settings.png" width="200" alt="Settings Screen" />
+  <img src="screenshots/DD_Main.jpeg" width="200" alt="Home Screen" />
+  <img src="screenshots/DD_Tasks.jpeg" width="200" alt="Tasks Screen" />
+  <img src="screenshots/DD_Task_Add.jpeg" width="200" alt="Task Add" />
+  <img src="screenshots/DD_task_done.jpeg" width="200" alt="Task Done" />
+  <img src="screenshots/DD_Settings.jpeg" width="200" alt="Settings Screen" />
 </p>
 
 ## ✨ Features
