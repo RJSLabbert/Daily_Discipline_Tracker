@@ -156,7 +156,9 @@ I struggle staying motivated and wanted a way to hold myself to my daily goals �
 - ↩️ Undo button to revert completed tasks
 
 ## 👤 Author
-**RJS Labbert**
-- GitHub: [@RJSLabbert](https://github.com/RJSLabbert)
 
+**RJSLabbert**
+
+* GitHub: [@RJSLabbert](https://github.com/RJSLabbert)
+* Blog: [rocksolidcode.co.za](https://rocksolidcode.co.za)
 ---
