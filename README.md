@@ -8,7 +8,7 @@ Android Kotlin app: **Add daily tasks → Check completion → Get customizable 
 
 ## 📋 Why I built this
 
-I struggle staying motivated and wanted a way to hold myself to my daily goals — whether that's working out, learning something new, or building a habit. I'm always on my phone, so I needed something annoying enough to push me into doing the task out of spite. That's how habits get built.
+I struggle staying motivated and wanted a way to hold myself to my daily goals whether that's working out, learning something new, or building a habit. I'm always on my phone, so I needed something annoying enough to push me into doing the task out of spite. That's how habits get built.
 
 ## 🎯 Screenshots
 
